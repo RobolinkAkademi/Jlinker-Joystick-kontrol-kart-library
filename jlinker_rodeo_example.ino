@@ -29,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(User_LED, LOW);
+  digitalWrite(User_LED, HIGH);
   Nrf24l01.stopListening();
   transmitted[9] = map(Joystick.POT_2(), 0, 1023, 255, 0);
   Serial.println(transmitted[9]);
